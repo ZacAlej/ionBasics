@@ -3,9 +3,16 @@
     <ion-title>
       Hello World
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="'/places'"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-text>My first app</ion-text>
+  <ion-list>
+    <ion-card *ngFor="let photo of ">
+      <img src="" alt="">
+    </ion-card>
+  </ion-list>
 </ion-content>

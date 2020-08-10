@@ -24,6 +24,10 @@ const routes: Routes = [
         loadChildren: () => import('./places/place-detail/place-detail.module').then( m => m.PlaceDetailPageModule)
       }
     ]
+  }, 
+  {
+    path: 'agregarLugares',
+    loadChildren: () => import('./places/place-add/place-add.module').then( m => m.PlaceAddPageModule)
   }
 ];
 
